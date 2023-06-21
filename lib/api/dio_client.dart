@@ -30,7 +30,7 @@ class DioClient with ChangeNotifier {
 
   Future<void> getForecast() async {
     Response response = await _dio.get(_forecastUrl,
-        queryParameters: {'key': apiKey, 'day': 14, 'q': longLat});
+        queryParameters: {'key': apiKey, 'days': 14, 'q': longLat});
 
     if (kDebugMode) {
       print('List Info: $response');

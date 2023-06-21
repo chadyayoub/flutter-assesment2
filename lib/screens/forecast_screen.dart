@@ -29,7 +29,7 @@ class _ForecastScreenState extends State<ForecastScreen> {
   @override
   Widget build(BuildContext context) {
     var weatherProvider = Provider.of<DioClient>(context);
-    if (weatherProvider.currentWeather.location == null) {
+    if (weatherProvider.currentWeather.current == null) {
       weatherProvider.getCurrentWeather();
     }
 

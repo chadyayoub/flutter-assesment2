@@ -1,5 +1,4 @@
 import 'package:assesment/api/dio_client.dart';
-import 'package:assesment/config/app_router.dart';
 import 'package:assesment/screens/forecast_screen.dart';
 import 'package:assesment/screens/upcoming_screen.dart';
 import 'package:flutter/material.dart';
